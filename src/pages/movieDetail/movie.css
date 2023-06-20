@@ -143,3 +143,47 @@
     align-items: center;
     justify-content: center;
 }
+
+@media only screen and (max-width: 768px) {
+    .movie__detail{
+        bottom: 400px;
+        flex-direction: column;
+        margin-bottom: -250px;
+        width: 85%;
+    }
+
+    .movie__detailLeft {
+        margin: 0px;
+    }
+
+    .movie__name {
+        font-size: 2.5rem;
+        margin: 20px 0px!important;
+    }
+
+    .synopsisText {
+        font-size: 1rem;
+    }
+
+    .movie__heading {
+        font-size: 2rem;
+    }
+
+    .movie__detailRightBottom{
+        margin: -10px 0px!important;
+    }
+
+    .movie__links {
+        flex-direction: column;
+        row-gap: 20px;
+        margin-bottom: -50px;
+        justify-content: space-between;
+        width: 90%;
+    }
+
+    .movie__production{
+        width: 90%!important;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

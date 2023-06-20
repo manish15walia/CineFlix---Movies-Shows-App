@@ -1,62 +1,64 @@
 .header {
-    margin: 0 2.5rem;
-    padding: 0.5rem 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+}
+
+.headerLeft {
+  flex: 1;
+}
+
+.logo {
+  font-family: 'Cursive Font', cursive;
+  font-weight: bold;
+  font-size: 28px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: transform 0.3s ease-in-out;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.headerCenter {
+  flex: 2;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.headerCenter span {
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: white;
+  padding: 0 20px
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
-  .headerLeft {
-    display: flex;
-    align-items: center;
+
+  .headerLeft{
+    width: 100%;
+    text-align: center;
   }
-  
+
   .headerCenter {
-    display: flex;
-    align-items: center;
-    flex-grow: 1;
-    margin-left: 450px;
-    /* justify-content: center; */
+    width: 100%;
+    margin-top: 10px;
+    justify-content: space-between;
   }
-  
+
   .headerCenter span {
-    font-size: 1.3rem;
-    cursor: pointer;
-    color: white;
-    padding: 0 20px; /* Adjust the padding to add space between the links */
-  }
-  
-  .headerCenter span:first-child {
     margin-left: 0;
+    margin-top: 10px;
+    display: block;
   }
-  
-  .headerCenter span:hover {
-    color: red;
-  }
-  
-  .header__icon {
-    width: 80px;
-    cursor: pointer;
-  }
-  
-  .user__avatar {
-    font-size: 2rem;
-  }
-  
-  .logo {
-    font-family: 'Cursive Font', cursive;
-    font-weight: bold;
-    font-size: 28px;
-    color: #ffffff; 
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    transition: transform 0.3s ease-in-out;
-    padding: 10px 20px; 
-    border-radius: 4px; 
-  }
-  
-  .logo:hover {
-    transform: scale(1.1); 
-  }
-  
+}
